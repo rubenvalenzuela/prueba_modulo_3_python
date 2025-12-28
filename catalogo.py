@@ -36,3 +36,4 @@ def busqueda_producto(referencia):
     if not encontrado:
         print('Este producto no está en el catálogo o no está disponible \n')  
 
+

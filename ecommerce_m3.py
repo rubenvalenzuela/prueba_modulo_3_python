@@ -106,7 +106,7 @@ while True:
     elif opcion == '2':
         #Buscar productos por nombre o categoría
         busqueda = input("Ingrese una referencia para su busqueda: ")
-        catalogo.busqueda_producto(busqueda)
+        catalogo.busqueda_producto(busqueda)     
 
     elif opcion =='3':
         #primero muestra la lista de productos disponibles

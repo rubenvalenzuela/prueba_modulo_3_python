@@ -6,7 +6,7 @@ def validador_id(id):
         if producto.get("id") == id:
             return True
     
-    print("Ingrese un ID valido")  
+    print("ERROR - Ingrese el ID de un producto que exista en el catálogo")  
     return False              
 
   

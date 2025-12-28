@@ -9,24 +9,33 @@ carrito = []
 #funcion para agregar productos al carrito
 def agregar_productos():
 
-    eleccion_producto = int(input("\nIngrese el ID del producto que quiere agregar al carrito: "))
+    eleccion_producto = input("\nIngrese el ID del producto que quiere agregar al carrito: ")
     cantidad_producto = input("\nIngrese la cantidad que quiere de este producto: ")
+    
+    if eleccion_producto.isdigit() and cantidad_producto.isdigit():
+        eleccion_producto = int(eleccion_producto)
+        cantidad_producto = int(cantidad_producto)
 
-    if validadores.validador_id(eleccion_producto):
-        
-        cantidad_int = int(cantidad_producto)
-        
-        for producto in catalogo:
-            if producto['id'] == eleccion_producto:
-                subtotal = cantidad_int * producto['Precio']
-                carrito.append({"id" : producto['id'],
-                                "Nombre" : producto['Nombre'],
-                                "Categoría": producto['Categoría'], 
-                                "Precio" : producto['Precio'],
-                                "Cantidad" : cantidad_int, 
-                                "Subtotal" : int(subtotal)
-                            })
-                print('Producto agregado correctamente al carrito\n')
+        if cantidad_producto >= 0:
+            if validadores.validador_id(eleccion_producto):
+                
+                cantidad_int = int(cantidad_producto)
+                
+                for producto in catalogo:
+                    if producto['id'] == eleccion_producto:
+                        subtotal = cantidad_int * producto['Precio']
+                        carrito.append({"id" : producto['id'],
+                                        "Nombre" : producto['Nombre'],
+                                        "Categoría": producto['Categoría'], 
+                                        "Precio" : producto['Precio'],
+                                        "Cantidad" : cantidad_int, 
+                                        "Subtotal" : int(subtotal)
+                                    })
+                        print('Producto agregado correctamente al carrito\n')
+        else:
+            print("Debe ingresar una cantidad mayor a cero")
+    else:
+        print("Por favor, ingrese solo números enteros")
 
 def ver_carrito():
 
