@@ -1,3 +1,9 @@
+"""
+Docstring para validadores
+Este es el archivo que contiene el validador de ID para la elección
+de productos del catálogo
+"""
+
 from catalogo import catalogo
 
 #valida que el id del producto existe

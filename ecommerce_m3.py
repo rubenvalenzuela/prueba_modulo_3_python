@@ -89,7 +89,12 @@ import mensajes
 import catalogo
 import carrito
 
-
+"""
+    Este es el archivo principal o MAIN para el 
+    programa, este ejecutará y mostrará el menu con el que se 
+    realizan todas las acciones del programa
+    Éxito!
+"""
 
 
 

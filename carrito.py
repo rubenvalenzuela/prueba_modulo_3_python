@@ -1,8 +1,12 @@
+"""
+Docstring para carrito
+Este es el archivo que maneja las funciones del carrito de compras
+Aqui encontrarás la funcion para agregar productos, ver el carrito y vaciar el carrito
+"""
+
+
 import validadores
 from catalogo import catalogo
-
-
-
 
 carrito = []
 

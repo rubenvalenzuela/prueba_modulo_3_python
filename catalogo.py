@@ -1,4 +1,8 @@
-#Catágolo de productos
+"""
+Docstring para catalogo
+Este es el archivo que contiene el catálogo que usaremos y las funciones del mismo
+Ver Catálogo y busqueda de producto
+"""
 
 catalogo = [
     {'id': 1, 'Nombre': 'Pisco Mistral', 'Categoría': 'Pisco', 'Precio': 4500},

@@ -1,3 +1,7 @@
+"""
+Docstring para mensajes
+Este es el archivo que contiene el mensaje principal del MENU
+"""
 
 #Menu de opciones principal del programa
 def menu ():
